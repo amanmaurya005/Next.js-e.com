@@ -18,33 +18,33 @@
 //   )
 // }
 
-// "use client"
+"use client"
 
-// import { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 
-// export default function Products() {
+export default function Products() {
 
-//   const [products,setProducts] = useState([])
+  const [products,setProducts] = useState([])
 
-//   useEffect(()=>{
-//     fetch("/api/products")
-//       .then(res => res.json())
-//       .then(data => setProducts(data))
-//   },[])
+  useEffect(()=>{
+    fetch("/api/products")
+      .then(res => res.json())
+      .then(data => setProducts(data))
+  },[])
 
-//   return (
-//     <div>
+  return (
+    <div>
 
-//       <h1>Products</h1>
+      <h1>Products</h1>
 
-//       {products.map((p:any)=>(
-//         <div key={p._id}>
-//           <h3>{p.title}</h3>
-//           <p>{p.price}</p>
-//           <img src={p.image} alt={p.title} />
-//         </div>
-//       ))}
+      {products.map((p:any)=>(
+        <div key={p._id}>
+          <h3>{p.title}</h3>
+          <p>{p.price}</p>
+          <img src={p.image} alt={p.title} />
+        </div>
+      ))}
 
-//     </div>
-//   )
-// }
+    </div>
+  )
+}
