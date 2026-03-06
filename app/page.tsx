@@ -1,11 +1,10 @@
-import React from 'react'
-
-export default function page() {
+export default function Home() {
   return (
-    <div>page</div>
-  )
+    <div className="p-10">
+      <h1 className="text-3xl font-bold">Welcome to E-Commerce</h1>
+    </div>
+  );
 }
-
 
 
 
