@@ -33,10 +33,6 @@ export default function Navbar(){
     {/* Navigation */}
     <nav className="flex items-center gap-6 text-gray-700 font-medium">
 
-     <Link href="/products" className="hover:text-indigo-600 transition">
-      Products
-     </Link>
-
      {!isLoggedIn && (
       <>
        <Link
